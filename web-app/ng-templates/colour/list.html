@@ -1,0 +1,43 @@
+<div class="page-header">
+    <h1>Colour List</h1>
+</div>
+<alert level="{{message.level}}" text="{{message.text}}"/>
+<table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+
+        <th>Colorname</th>
+
+        <th>Dcid</th>
+
+        <th>Filename</th>
+
+        <th>Pantone</th>
+
+        <th>Season</th>
+
+        <th>Tone</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr data-ng-repeat="item in list" data-ng-click="show(item)">
+
+        <td>{{item.colorname}}</td>
+
+        <td>{{item.dc_id}}</td>
+
+        <td>{{item.filename}}</td>
+
+        <td>{{item.pantone}}</td>
+
+        <td>{{item.season}}</td>
+
+        <td>{{item.tone}}</td>
+
+        <td>{{item.webcolor}}</td>
+
+    </tr>
+    </tbody>
+</table>
+<div class="pagination pagination-centered" data-pagination data-total="total"></div>
